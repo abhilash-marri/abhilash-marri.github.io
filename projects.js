@@ -75,6 +75,7 @@ function displayProjects(list) {
             <a href=${project.url}><img class="thumbnail" src=${project.image}></a>
             <div class="post-preview">
                 <h4 class="post-title">${project.title}-${project.type}</h4>
+                <h5 style="color:blue>Co-Author: <a href="sai-raman.github.io">Sai Raman Kilambi</a></h5>
                 <p class="post-intro" id="para"><b>${project.description}</b>
                 </p>
             </div>
