@@ -3,7 +3,7 @@ $(function() {
     { 
       action: 'type',
       strings: ["npm install -g efficient-programmer"],
-      output: '<span class="green">+sai-raman-kilambi@latest installed</span><br>&nbsp;',
+      output: '<span class="green">+abhilash-reddy-marri@latest installed</span><br>&nbsp;',
       postDelay: 1000
     },
     { 

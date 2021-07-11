@@ -1,52 +1,13 @@
 const projects = [
     {
-        title: 'WIKIME',
-        image:'images/chrome.jpg',
-        co-author: 'Sai Raman Kilambi',
-        type: 'Google Chrome Extension',
-        description: 'A chrome extension which searches for the highlighted text in WIKIPEDIA.'
-    },
-
-{
-      title: 'Student Garde Prediction',
-        image:'images/grade.jpeg',
-        type: 'Machine Learning Model',
-        co-author: 'Sai Raman Kilambi',
-        description: `A machine learning project that uses both Naive Bayes and Decision
-        Tree algorithms to predict the grade of a student.
-        Technologies: Python, Scikit-learn, pandas, matplotlib`
-    },
-    {
-        title: 'Tennis Game ',
-        image:'images/tennis.png',
-        co-author: 'Sai Raman Kilambi',
-        type: 'Javascript',
-        description: `A tennis game developed using HTML, CSS and Javascript (Using
-            Canvas)`
-    },
-    {
-        title: 'Snake Game',
-        type: 'Javascript',
-        co-author: 'Sai Raman Kilambi',
-        image:'images/snake.png',
-        description: `The classic snake game build using Javascript and P5.js.`
-    },
-    {
-        title: 'Budget Manager',
-        image:'images/chrome.jpg',
-        co-author: 'Sai Raman Kilambi',
-        type: 'Google Chrome Extension',
-        description: `A chrome extension to make a note of expenses especially on the
-        ecommerce websites.`
-    },
-    {
-        title: 'Speak It',
-        type: 'Google Chrome Extension',
-        image:'images/chrome.jpg',
-        co-author: 'Sai Raman Kilambi',
-        description: `A chrome extension which says aloud the selected text on the
-        browser using the Web Speech API of chrome.`
-    },
+        title: 'COVID-19 Tracker',
+        url: 'https://abhilash-marri.github.io/covidtracker/',
+        codeUrl:'https://github.com/abhilash-marri/covid-tracker',
+        private:false,
+        image:'images/tracker.png',
+        type: 'React.js',
+        description: 'A React project that tracks the COVID-19 cases across the world. It displays world wide trend using line graph and country wide cases in the form of bar graphs.'
+    }
 ]
 
 let search_input = document.getElementById('search');
@@ -75,9 +36,10 @@ function displayProjects(list) {
             <a href=${project.url}><img class="thumbnail" src=${project.image}></a>
             <div class="post-preview">
                 <h4 class="post-title">${project.title}-${project.type}</h4>
-                <h5 style="color:blue>Co-Author: <a href="sai-raman.github.io">Sai Raman Kilambi</a></h5>
                 <p class="post-intro" id="para"><b>${project.description}</b>
                 </p>
+                <button class="btn btn-danger" onclick="window.open('${project.codeUrl}', '_blank');">View Code</button>
+                <button class="btn btn-warning" onclick="window.open('${project.url}', '_blank');">Demo</button>
             </div>
         </div>
         </div>
